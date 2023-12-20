@@ -1,0 +1,44 @@
+.personnel-box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.personnel-icon-element {
+  display: flex;
+  justify-content: center;
+}
+
+.personnel-icon-box {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  padding: 2rem;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.personnel-icon-box > * {
+  scale: 0.058;
+}
+
+.personnel-title-element {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.personnel-description-element {
+  color: var(--text);
+  font-weight: normal;
+}
+
+.personnel-icon-box:hover {
+  scale: 1.1;
+}

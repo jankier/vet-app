@@ -1,23 +1,46 @@
 .selected-page {
+  position: relative;
   text-decoration: none;
   color: var(--secondary);
   transition: color 0.7s ease-in-out;
   font-weight: bold;
+  max-width: max-content;
 }
 
-.selected-page:hover {
-  cursor: pointer;
-  color: var(--text);
+.selected-page:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.selected-page:hover:before {
+  width: 100%;
 }
 
 .list-element {
+  position: relative;
   color: var(--background);
   text-decoration: none;
   transition: color 0.5s ease-in-out;
   font-weight: bold;
+  cursor: pointer;
+  max-width: max-content;
 }
 
-.list-element:hover {
-  cursor: pointer;
-  color: var(--text);
+.list-element:before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.list-element:hover:before {
+  width: 100%;
 }

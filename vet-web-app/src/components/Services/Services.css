@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 8rem;
+    grid-column-gap: 12rem;
     grid-row-gap: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -21,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   user-select: none;
+  background-color: var(--primary);
 }
 
 .services-section {
@@ -45,5 +46,5 @@
 
 .services-list > * {
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--background);
+  border-bottom: 2px solid var(--background);
 }

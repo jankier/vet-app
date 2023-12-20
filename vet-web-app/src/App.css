@@ -5,14 +5,6 @@
   --secondary: #3375d8;
   --acent: #4088f3;
 }
-@media only screen and (min-width: 1060px) {
-  body {
-    background-color: var(--primary) !important;
-  }
-}
-body {
-  background-color: var(--primary);
-}
 
 .App {
   display: flex;

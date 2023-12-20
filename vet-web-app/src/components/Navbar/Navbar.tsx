@@ -38,13 +38,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             ></Link>
             <Link
-              page="Services"
-              selectedPage={selectedPage}
-              isMenuToggled={isMenuToggled}
-              setIsMenuToggled={setIsMenuToggled}
-              setSelectedPage={setSelectedPage}
-            ></Link>
-            <Link
               page="Our Staff"
               selectedPage={selectedPage}
               isMenuToggled={isMenuToggled}
@@ -52,7 +45,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             ></Link>
             <Link
-              page="About Us"
+              page="Services"
               selectedPage={selectedPage}
               isMenuToggled={isMenuToggled}
               setIsMenuToggled={setIsMenuToggled}
@@ -128,13 +121,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             ></Link>
             <Link
-              page="Services"
-              selectedPage={selectedPage}
-              isMenuToggled={isMenuToggled}
-              setIsMenuToggled={setIsMenuToggled}
-              setSelectedPage={setSelectedPage}
-            ></Link>
-            <Link
               page="Our Staff"
               selectedPage={selectedPage}
               isMenuToggled={isMenuToggled}
@@ -142,7 +128,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             ></Link>
             <Link
-              page="About Us"
+              page="Services"
               selectedPage={selectedPage}
               isMenuToggled={isMenuToggled}
               setIsMenuToggled={setIsMenuToggled}
