@@ -25,10 +25,6 @@
   justify-content: center;
 }
 
-.personnel-icon-box > * {
-  scale: 0.058;
-}
-
 .personnel-title-element {
   color: var(--text);
   font-size: 1.2rem;
@@ -40,5 +36,5 @@
 }
 
 .personnel-icon-box:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
