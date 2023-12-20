@@ -1,0 +1,119 @@
+@media only screen and (min-width: 1060px) {
+  .home-section {
+    display: flex;
+    padding-bottom: 12rem !important;
+  }
+  .home-text {
+    padding-bottom: 0 !important;
+  }
+  .left-side-home {
+    justify-content: start !important;
+  }
+  .right-side-home {
+    justify-content: start !important;
+  }
+}
+
+.home {
+  padding-top: 83px;
+  user-select: none;
+  color: var(--background);
+  align-items: center;
+}
+
+.home-section {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: var(--primary);
+  gap: 2rem;
+}
+
+.left-side-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.home-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-logo > :nth-child(1) {
+  width: 20rem;
+}
+
+.home-logo > :nth-child(2) {
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  padding-right: 0.6rem;
+}
+
+.home-logo > :nth-child(3) {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: start;
+}
+
+.home-logo > :nth-child(4) {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2rem;
+}
+
+.appointment-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 80%;
+  color: var(--background);
+  background-color: var(--secondary);
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.calendar-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.appointment-button:hover {
+  color: var(--secondary);
+  background-color: var(--background);
+}
+
+.right-side-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side-img {
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}

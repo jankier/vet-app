@@ -1,0 +1,48 @@
+.benefit-box {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.benefit-box:hover .icon-box {
+  color: var(--secondary);
+  background-color: var(--background);
+}
+
+.icon-element {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  color: var(--background);
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.title-element {
+  color: var(--background);
+  font-size: 1.2rem;
+}
+
+.description-element {
+  color: var(--background);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.button-element {
+  color: var(--background);
+  transition: color 0.7s ease-in-out;
+}
+
+.button-element:hover {
+  color: var(--secondary);
+}

@@ -1,0 +1,23 @@
+.selected-page {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: color 0.7s ease-in-out;
+  font-weight: bold;
+}
+
+.selected-page:hover {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.list-element {
+  color: var(--background);
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.list-element:hover {
+  cursor: pointer;
+  color: var(--text);
+}

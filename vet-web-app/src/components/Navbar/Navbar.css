@@ -1,0 +1,132 @@
+@media only screen and (min-width: 1060px) {
+  .left-side-navbar {
+    padding-left: 2rem !important;
+  }
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: var(--text);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  user-select: none;
+  transition: box-shadow 0.7s ease-in-out;
+  background-color: var(--primary);
+}
+
+.navbar-not-on-top {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: var(--text);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  user-select: none;
+  transition: box-shadow 0.7s ease-in-out;
+  background-color: var(--primary);
+  box-shadow: 0px 0px 30px -15px var(--text);
+}
+
+.left-side-navbar {
+  padding-left: 0;
+}
+
+.logo-img-navbar {
+  width: 10rem;
+  height: auto;
+}
+
+.right-side-navbar {
+  padding-right: 4rem;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.right-side-navbar-sidebar {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.menu-button {
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--background);
+  border-radius: 100%;
+  border-style: none;
+  transition: background-color 0.7s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.menu-button-not-on-top {
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--background);
+  border-radius: 100%;
+  border-style: none;
+  transition: background-color 0.7s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.menu-button:hover {
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
+.menu-button-not-on-top:hover {
+  background-color: var(--secondary);
+}
+
+.sidebar-menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 40;
+  width: 20rem;
+  background-color: var(--primary);
+  box-shadow: 0px 0px 20px -3px var(--primary);
+}
+
+.close-menu {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.close-button {
+  border: none;
+  color: var(--background);
+  background-color: var(--primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: color 0.7s ease-in-out;
+}
+
+.close-button:hover {
+  color: var(--secondary);
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8rem;
+  gap: 2rem;
+}
