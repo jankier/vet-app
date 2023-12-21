@@ -1,0 +1,136 @@
+@media only screen and (min-width: 1060px) {
+  .footer-content {
+    display: flex;
+  }
+  .second-section {
+    padding-top: 0rem !important;
+  }
+  .third-section {
+    padding-top: 0rem !important;
+  }
+  .footer-partners {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+  }
+  .footer-partners > img {
+    height: auto;
+    width: 12rem !important;
+  }
+}
+
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: var(--primary);
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  gap: 4rem;
+  margin: auto;
+  border-bottom: 1px solid var(--background);
+}
+
+.first-section {
+  flex-basis: 50%;
+  color: var(--background);
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img-footer {
+  width: 10rem;
+}
+
+.second-section {
+  font-family: "Roboto", sans-serif;
+  color: var(--background);
+  flex-basis: 25%;
+  padding-top: 2rem;
+}
+
+.second-section > :nth-child(1) {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.social-media-links {
+  padding-top: 0.5rem;
+  display: flex;
+  padding-left: 2rem;
+  gap: 2rem;
+}
+
+.social-media-links > a {
+  color: var(--background);
+  transition: color 1s ease-in-out;
+}
+
+.social-media-links > :nth-child(1):hover {
+  color: #0866ffff;
+}
+
+.social-media-links > :nth-child(2):hover {
+  color: #f15245;
+}
+
+.third-section {
+  font-family: "Roboto", sans-serif;
+  color: var(--background);
+  font-size: 2rem;
+  flex-basis: 25%;
+  padding-top: 2rem;
+}
+
+.third-section > :nth-child(1) {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.third-section > :nth-child(2) {
+  user-select: text;
+  font-size: 1rem;
+}
+
+.third-section > :nth-child(2)::selection {
+  background-color: var(--secondary);
+}
+
+.third-section > :nth-child(3) {
+  user-select: text;
+  font-size: 1rem;
+}
+
+.third-section > :nth-child(3)::selection {
+  background-color: var(--secondary);
+}
+
+.footer-partners {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-partners > img {
+  width: 100%;
+  height: auto;
+}

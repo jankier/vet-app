@@ -3,6 +3,7 @@ export enum SelectedPage {
   Services = "services",
   OurStaff = "ourstaff",
   Gallery = "gallery",
+  ContactUs = "contactus",
 }
 
 export type ServiceType = {
@@ -17,6 +18,7 @@ export type PersonnelType = {
   specialization: string;
 };
 
-export type GalleryType = {
+export type CarouselGalleryType = {
   image: JSX.Element;
+  id: number;
 };

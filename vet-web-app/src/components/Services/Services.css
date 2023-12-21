@@ -31,6 +31,7 @@
   align-items: center;
   width: 80%;
   background-color: var(--primary);
+  padding-top: 4rem;
 }
 
 .services-title {

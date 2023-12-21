@@ -1,8 +1,11 @@
 import { SelectedPage } from "../../shared/types";
 import "./Home.css";
 import vetlab_logo from "../../assets/vetlab-logo.png";
-// import home_img from "../../assets/home-img.png";
-import home_img2 from "../../assets/home-imgv2.jpg";
+import home_img from "../../assets/home-img.png";
+import home_img1 from "../../assets/home-img1.png";
+import home_img2 from "../../assets/home-img2.png";
+import home_img3 from "../../assets/home-img3.png";
+
 import { motion } from "framer-motion";
 
 type Props = {
@@ -44,11 +47,18 @@ const Home = ({ setSelectedPage }: Props) => {
           </div>
         </div>
         <div className="right-side-home">
-          <img
-            className="right-side-img"
-            src={home_img2}
-            alt="home page image"
-          ></img>
+          <div className="right-side-img">
+            <img src={home_img} alt="home page image no.0"></img>
+          </div>
+          <div className="right-side-img1">
+            <img src={home_img1} alt="home page image no.1"></img>
+          </div>
+          <div className="right-side-img2">
+            <img src={home_img2} alt="home page image no.2"></img>
+          </div>
+          <div className="right-side-img3">
+            <img src={home_img3} alt="home page image no.3"></img>
+          </div>
         </div>
       </motion.div>
     </div>

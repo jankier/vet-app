@@ -41,6 +41,9 @@
     width: 400px;
     margin-right: 3rem;
   }
+  .carousel {
+    width: 900px !important;
+  }
 }
 
 .gallery {
@@ -51,7 +54,6 @@
   user-select: none;
   background-color: var(--background);
   padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .gallery-section {
@@ -88,7 +90,7 @@
 }
 
 .gallery-text1 {
-  background-color: var(--acent);
+  background-color: var(--secondary);
   text-align: center;
   font-size: 1rem;
   padding: 2rem;
@@ -101,7 +103,7 @@
 }
 
 .gallery-text2 {
-  background-color: var(--primary);
+  background-color: var(--acent);
   text-align: center;
   font-size: 1rem;
   padding: 2rem;
@@ -119,4 +121,10 @@
   font-size: 1rem;
   padding: 2rem;
   border-radius: 10px;
+}
+
+.carousel {
+  margin-top: 4rem;
+  width: 100%;
+  border-radius: 20px;
 }

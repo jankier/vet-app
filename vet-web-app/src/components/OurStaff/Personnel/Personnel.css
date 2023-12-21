@@ -36,5 +36,5 @@
 }
 
 .personnel-icon-box:hover {
-  scale: 1.05;
+  box-shadow: 0px 0px 0px 4px var(--secondary);
 }

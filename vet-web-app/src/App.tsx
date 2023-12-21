@@ -5,6 +5,8 @@ import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import OurStaff from "./components/OurStaff/OurStaff";
 import Gallery from "./components/Gallery/Gallery";
+import Footer from "./components/Footer/Footer";
+import ContactUs from "./components/ContactUs/ContactUs";
 import "./App.css";
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
       <OurStaff setSelectedPage={setSelectedPage} />
       <Services setSelectedPage={setSelectedPage} />
       <Gallery setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </>
   );
 }

@@ -95,7 +95,7 @@
 }
 
 .ourstaff-text1 {
-  background-color: var(--acent);
+  background-color: var(--secondary);
   text-align: center;
   font-size: 1rem;
   padding: 2rem;
@@ -108,7 +108,7 @@
 }
 
 .ourstaff-text2 {
-  background-color: var(--primary);
+  background-color: var(--acent);
   text-align: center;
   font-size: 1rem;
   padding: 2rem;

@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import { SelectedPage } from "../../shared/types";
+import { SelectedPage, CarouselGalleryType } from "../../shared/types";
 import { Carousel } from "react-responsive-carousel";
+import { carousel_gallery } from "../../shared/galery_data";
+import CarouselGallery from "./CarouselGallery/CarouselGallery";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Gallery.css";
 
 type Props = {
@@ -98,12 +101,16 @@ const Gallery = ({ setSelectedPage }: Props) => {
             <span>
               Discover the gentle moments that define our clinic — a reassuring
               pat, a comforting cuddle, and the genuine connection between our
-              staff and the animals. It's more than just medical care; it's
+              staff and the animals. It's more than just medical care, it's
               about creating an atmosphere of trust and understanding.
             </span>
           </div>
         </div>
-        <Carousel></Carousel>
+        <Carousel className="carousel" autoPlay infiniteLoop stopOnHover>
+          {carousel_gallery.map((element: CarouselGalleryType) => (
+            <CarouselGallery key={element.id} image={element.image} />
+          ))}
+        </Carousel>
       </motion.div>
     </div>
   );
