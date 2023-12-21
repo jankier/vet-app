@@ -95,10 +95,11 @@
 .home-logo {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
 }
 
 .home-logo > :nth-child(1) {
-  width: 20rem;
+  width: 18rem;
 }
 
 .home-logo > :nth-child(2) {

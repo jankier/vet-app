@@ -6,6 +6,9 @@
     flex-direction: row !important;
     justify-content: space-between !important;
   }
+  .form-elements {
+    flex-direction: row;
+  }
   .form-input {
     width: 50% !important;
   }
@@ -16,7 +19,7 @@
     width: 15% !important;
   }
   .cat-relative {
-    visibility: visible !important;
+    display: flex !important;
   }
   .map {
     display: flex;
@@ -63,9 +66,14 @@
   gap: 0.7rem;
   padding-bottom: 4rem;
   height: 100%;
+  width: 80%;
 }
 
 .form-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
   width: 100%;
   position: relative;
 }
@@ -119,7 +127,7 @@
   color: var(--text);
   height: 3rem;
   border-radius: 10px;
-  width: 40%;
+  width: 60%;
   cursor: pointer;
   text-align: center;
 }
@@ -164,7 +172,7 @@
   position: absolute;
   left: 200px;
   top: 220px;
-  visibility: hidden;
+  display: none;
 }
 
 .map-title {

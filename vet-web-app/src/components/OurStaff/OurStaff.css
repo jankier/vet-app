@@ -12,7 +12,7 @@
     gap: 0.5rem !important;
   }
   .icon1-relative-text {
-    visibility: visible !important;
+    display: flex !important;
     position: absolute;
     left: -120px;
     top: 30px;
@@ -25,7 +25,7 @@
     margin-left: 12rem;
   }
   .icon2-relative-text {
-    visibility: visible !important;
+    display: flex !important;
     position: absolute;
     right: -190px;
     top: 190px;
@@ -37,7 +37,7 @@
     margin-right: 14rem;
   }
   .icon3-relative-text {
-    visibility: visible !important;
+    display: flex !important;
     position: absolute;
     left: -150px;
     top: 430px;
@@ -94,7 +94,7 @@
 
 .icon1-relative-text {
   transform: rotateY(180deg);
-  visibility: hidden;
+  display: none;
   height: 0;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .icon2-relative-text {
-  visibility: hidden;
+  display: none;
   height: 0;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .icon3-relative-text {
-  visibility: hidden;
+  display: none;
   height: 0;
 }
 
