@@ -15,7 +15,8 @@
   }
   .footer-partners > img {
     height: auto;
-    width: 12rem !important;
+    max-width: 12rem !important;
+    min-width: 5rem;
   }
 }
 
@@ -36,7 +37,6 @@
 
 .footer-content {
   gap: 4rem;
-  margin: auto;
   border-bottom: 1px solid var(--background);
 }
 
@@ -115,6 +115,11 @@
   font-size: 1rem;
 }
 
+.third-section > :nth-child(4) {
+  user-select: text;
+  font-size: 1rem;
+}
+
 .third-section > :nth-child(3)::selection {
   background-color: var(--secondary);
 }
@@ -132,5 +137,6 @@
 
 .footer-partners > img {
   width: 100%;
+  max-width: 250px;
   height: auto;
 }

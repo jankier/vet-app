@@ -3,7 +3,7 @@ export enum SelectedPage {
   Services = "services",
   OurStaff = "ourstaff",
   Gallery = "gallery",
-  ContactUs = "contactus",
+  ContactUS = "contactus",
 }
 
 export type ServiceType = {

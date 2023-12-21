@@ -127,6 +127,6 @@
 .sidebar-list {
   display: flex;
   flex-direction: column;
-  padding-left: 8rem;
+  padding-left: 6rem;
   gap: 2rem;
 }

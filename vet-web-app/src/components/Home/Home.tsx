@@ -1,4 +1,5 @@
 import { SelectedPage } from "../../shared/types";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Home.css";
 import vetlab_logo from "../../assets/vetlab-logo.png";
 import home_img from "../../assets/home-img.png";
@@ -19,7 +20,21 @@ const Home = ({ setSelectedPage }: Props) => {
         className="home-section"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
-        <div className="left-side-home">
+        <motion.div
+          className="left-side-home"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 12,
+              stiffness: 100,
+              restDelta: 0.001,
+            },
+          }}
+        >
           <div className="home-text">
             <div className="home-logo">
               <img src={vetlab_logo} alt="vetlab logo"></img>
@@ -27,7 +42,12 @@ const Home = ({ setSelectedPage }: Props) => {
               <span>Caring Beyond Treatment,</span>
               <span> Healing Beyond Words.</span>
             </div>
-            <button className="appointment-button">
+            <AnchorLink
+              className="appointment-button"
+              onClick={() => setSelectedPage(SelectedPage.ContactUS)}
+              offset="83px"
+              href={"#contactus"}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,9 +63,9 @@ const Home = ({ setSelectedPage }: Props) => {
                 />
               </svg>
               Schedule an appointment
-            </button>
+            </AnchorLink>
           </div>
-        </div>
+        </motion.div>
         <div className="right-side-home">
           <div className="right-side-img">
             <img src={home_img} alt="home page image no.0"></img>

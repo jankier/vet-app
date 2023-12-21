@@ -15,9 +15,19 @@ const Services = ({ setSelectedPage }: Props) => {
         className="services-section"
         onViewportEnter={() => setSelectedPage(SelectedPage.Services)}
       >
-        <div className="services-title">
-          <p>Avaliable Services</p>
-        </div>
+        <motion.div
+          className="services-title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <span>Avaliable Services</span>
+        </motion.div>
         <div className="services-list">
           {services.map((service: ServiceType) => (
             <Service

@@ -71,18 +71,18 @@ const Footer = () => {
                 >
                   <g
                     fill="currentColor"
-                    fill-rule="nonzero"
+                    fillRule="nonzero"
                     stroke="none"
-                    stroke-width="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
+                    strokeWidth="1"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
+                    strokeMiterlimit="10"
+                    strokeDasharray=""
+                    strokeDashoffset="0"
+                    fontFamily="none"
+                    fontWeight="none"
+                    fontSize="none"
+                    textAnchor="none"
                   >
                     <g transform="scale(5.33333,5.33333)">
                       <path d="M16.5,5c-6.341,0 -11.5,5.159 -11.5,11.5v15c0,6.341 5.159,11.5 11.5,11.5h15c6.341,0 11.5,-5.159 11.5,-11.5v-15c0,-6.341 -5.159,-11.5 -11.5,-11.5zM34,12c1.105,0 2,0.895 2,2c0,1.104 -0.895,2 -2,2c-1.105,0 -2,-0.896 -2,-2c0,-1.105 0.895,-2 2,-2zM24,14c5.514,0 10,4.486 10,10c0,5.514 -4.486,10 -10,10c-5.514,0 -10,-4.486 -10,-10c0,-5.514 4.486,-10 10,-10zM24,17c-3.86599,0 -7,3.13401 -7,7c0,3.86599 3.13401,7 7,7c3.86599,0 7,-3.13401 7,-7c0,-3.86599 -3.13401,-7 -7,-7z"></path>
@@ -96,6 +96,7 @@ const Footer = () => {
             <span>Contact</span>
             <p>vetlab@gmail.com</p>
             <p>+48 612 328 419</p>
+            <p>Wawelska 412 St.</p>
           </div>
         </div>
         <div className="footer-partners">

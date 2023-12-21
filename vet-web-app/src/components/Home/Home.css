@@ -1,7 +1,6 @@
 @media only screen and (min-width: 1060px) {
   .home-section {
     display: flex;
-    padding-bottom: 10rem !important;
   }
   .home-text {
     padding-bottom: 0 !important;
@@ -65,11 +64,12 @@
   color: var(--background);
   background-color: var(--primary);
   align-items: center;
+  padding-bottom: 6rem;
 }
 
 .home-section {
   padding-top: 6.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -138,6 +138,7 @@
   border-radius: 0.5rem;
   transition: all 1s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .calendar-icon {

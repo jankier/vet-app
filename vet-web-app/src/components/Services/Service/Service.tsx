@@ -9,7 +9,17 @@ type Props = {
 
 const Service = ({ icon, title, description }: Props) => {
   return (
-    <motion.div className="service-box">
+    <motion.div
+      className="service-box"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 1 }}
+      variants={{
+        hidden: { opacity: 0, scale: 0.5 },
+        visible: { opacity: 1, scale: 1 },
+      }}
+    >
       <div className="service-icon-element">
         <div className="service-icon-box">{icon}</div>
       </div>
