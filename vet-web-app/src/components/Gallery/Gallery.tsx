@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SelectedPage, CarouselGalleryType } from "../../shared/types";
 import { Carousel } from "react-responsive-carousel";
 import { carousel_gallery } from "../../shared/galery_data";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import CarouselGallery from "./CarouselGallery/CarouselGallery";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Gallery.css";
@@ -11,6 +12,8 @@ type Props = {
 };
 
 const Gallery = ({ setSelectedPage }: Props) => {
+  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
+
   return (
     <div id="gallery" className="gallery">
       <motion.div
@@ -65,7 +68,7 @@ const Gallery = ({ setSelectedPage }: Props) => {
             className="gallery-text1"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: 50 },
@@ -113,7 +116,7 @@ const Gallery = ({ setSelectedPage }: Props) => {
             className="gallery-text2"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
@@ -161,7 +164,7 @@ const Gallery = ({ setSelectedPage }: Props) => {
             className="gallery-text3"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: 50 },

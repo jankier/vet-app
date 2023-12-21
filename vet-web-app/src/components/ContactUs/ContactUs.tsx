@@ -3,6 +3,7 @@ import { SelectedPage } from "../../shared/types";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import "react-datepicker/dist/react-datepicker.css";
 import "./ContactUs.css";
 
@@ -11,6 +12,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
+  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
   const [startDate, setStartDate] = useState(new Date());
 
   const {
@@ -50,7 +52,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             className="form-elements"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },

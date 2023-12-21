@@ -87,7 +87,7 @@ const OurStaff = ({ setSelectedPage }: Props) => {
             className="ourstaff-text1"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
@@ -141,7 +141,7 @@ const OurStaff = ({ setSelectedPage }: Props) => {
             className="ourstaff-text2"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: 50 },
@@ -190,7 +190,7 @@ const OurStaff = ({ setSelectedPage }: Props) => {
             className="ourstaff-text3"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 1 }}
+            viewport={{ once: true, amount: isAboveMediumScreen ? 1 : 0.5 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
