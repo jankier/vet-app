@@ -95,7 +95,6 @@
 .icon1-relative-text {
   transform: rotateY(180deg);
   display: none;
-  height: 0;
 }
 
 .ourstaff-text1 {
@@ -108,7 +107,6 @@
 
 .icon2-relative-text {
   display: none;
-  height: 0;
 }
 
 .ourstaff-text2 {
@@ -121,7 +119,6 @@
 
 .icon3-relative-text {
   display: none;
-  height: 0;
 }
 
 .ourstaff-text3 {

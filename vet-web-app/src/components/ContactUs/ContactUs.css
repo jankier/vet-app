@@ -29,6 +29,7 @@
 
 .contact-us {
   padding-top: 4rem;
+  padding-bottom: 4rem;
   user-select: none;
   background-color: var(--primary);
 }
@@ -94,14 +95,14 @@
   border: none;
   font-family: "Roboto";
   color: var(--text);
+  padding-left: 2rem;
+  padding-right: 2rem;
   height: 3rem;
   border-radius: 10px;
   width: 100%;
 }
 
 .form-input::placeholder {
-  padding-left: 2rem;
-  padding-right: 2rem;
   font-size: 1rem;
   color: var(--text);
 }

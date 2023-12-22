@@ -91,7 +91,6 @@
 .icon1-relative-text-gallery {
   transform: rotateY(180deg);
   display: none;
-  height: 0;
 }
 
 .gallery-text1 {
@@ -104,7 +103,6 @@
 
 .icon2-relative-text-gallery {
   display: none;
-  height: 0;
 }
 
 .gallery-text2 {
@@ -117,7 +115,6 @@
 
 .icon3-relative-text-gallery {
   display: none;
-  height: 0;
 }
 
 .gallery-text3 {

@@ -115,12 +115,16 @@
   font-size: 1rem;
 }
 
+.third-section > :nth-child(3)::selection {
+  background-color: var(--secondary);
+}
+
 .third-section > :nth-child(4) {
   user-select: text;
   font-size: 1rem;
 }
 
-.third-section > :nth-child(3)::selection {
+.third-section > :nth-child(4)::selection {
   background-color: var(--secondary);
 }
 
