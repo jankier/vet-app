@@ -133,17 +133,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               </svg>
             </div>
           </motion.div>
-          <motion.div
-            className="map"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1 }}
-            variants={{
-              hidden: { opacity: 0, x: isAboveMediumScreen ? 50 : 30 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
+          <div className="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.55624515801!2d20.991452496001017!3d52.216458235815914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccbfadf2121f%3A0x6700ef8201286d88!2sWawelska%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1703180788342!5m2!1spl!2spl"
               width="600"
@@ -151,7 +141,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               loading="lazy"
               style={{ border: 0, borderRadius: 15 }}
             ></iframe>
-          </motion.div>
+          </div>
         </div>
       </motion.div>
     </div>
