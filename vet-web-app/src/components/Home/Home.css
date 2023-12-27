@@ -64,11 +64,11 @@
   color: var(--background);
   background-color: var(--primary);
   align-items: center;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 
 .home-section {
-  padding-top: 6.5rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
   margin-bottom: auto;
   margin-left: auto;
@@ -89,7 +89,7 @@
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .home-logo {

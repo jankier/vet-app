@@ -22,14 +22,14 @@ const Home = ({ setSelectedPage }: Props) => {
       >
         <motion.div
           className="left-side-home"
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 0.9 }}
           transition={{
             duration: 0.3,
             ease: [0, 0.71, 0.2, 1.01],
             scale: {
               type: "spring",
-              damping: 12,
+              damping: 6,
               stiffness: 100,
               restDelta: 0.001,
             },
