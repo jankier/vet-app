@@ -64,7 +64,8 @@
   color: var(--background);
   background-color: var(--primary);
   align-items: center;
-  padding-bottom: 8rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .home-section {
